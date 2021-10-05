@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体复合属性</title>
+    <style>
+        /* 想要字体变 倾斜 加粗 字号为16px 并且是 微软雅黑 */
+        /*常规我们写成： 
+        div {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px; 
+            font-family: "微软雅黑";
+        } */
+        /*复合属性 简写的形式 简化代码    不能更换顺序！！！
+         div {
+            font: font-style font-weight font-size font-family;
+        } */
+        div {
+            font: italic 700 16px 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+    <div>三生三世十里桃花，一心一意百行代码</div>
+</body>
+</html>
